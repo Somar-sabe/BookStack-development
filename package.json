@@ -1,0 +1,34 @@
+{
+  "private": true,
+  "scripts": {
+    "build:css:dev": "sass ./resources/sass:./public/dist --embed-sources",
+    "build:css:watch": "sass ./resources/sass:./public/dist --watch --embed-sources",
+    "build:css:production": "sass ./resources/sass:./public/dist -s compressed",
+    "build:js:dev": "node dev/build/esbuild.js",
+    "build:js:watch": "chokidar --initial \"./resources/**/*.js\" -c \"npm run build:js:dev\"",
+    "build:js:production": "node dev/build/esbuild.js production",
+    "build": "npm-run-all --parallel build:*:dev",
+    "production": "npm-run-all --parallel build:*:production",
+    "dev": "npm-run-all --parallel watch livereload",
+    "watch": "npm-run-all --parallel build:*:watch",
+    "livereload": "livereload ./public/dist/",
+    "permissions": "chown -R $USER:$USER bootstrap/cache storage public/uploads"
+  },
+  "devDependencies": {
+    "chokidar-cli": "^3.0",
+    "esbuild": "^0.17.3",
+    "livereload": "^0.9.3",
+    "npm-run-all": "^4.1.5",
+    "punycode": "^2.3.0",
+    "sass": "^1.57.0"
+  },
+  "dependencies": {
+    "clipboard": "^2.0.11",
+    "codemirror": "^5.65.5",
+    "dropzone": "^5.9.3",
+    "markdown-it": "^13.0.1",
+    "markdown-it-task-lists": "^2.1.1",
+    "snabbdom": "^3.5.1",
+    "sortablejs": "^1.15.0"
+  }
+}

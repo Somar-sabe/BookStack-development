@@ -1,0 +1,39 @@
+{
+  "id": 75,
+  "book_id": 1,
+  "slug": "my-fantastic-updated-chapter",
+  "name": "My fantastic updated chapter",
+  "description": "This is an updated chapter that I've altered via the API",
+  "priority": 7,
+  "created_at": "2020-05-22T23:03:35.000000Z",
+  "updated_at": "2020-05-22T23:07:20.000000Z",
+  "created_by": 1,
+  "updated_by": 1,
+  "owned_by": 1,
+  "book": {
+    "id": 1,
+    "name": "BookStack User Guide",
+    "slug": "bookstack-user-guide",
+    "description": "This is a general guide on using BookStack on a day-to-day basis.",
+    "created_at": "2019-05-05T21:48:46.000000Z",
+    "updated_at": "2019-12-11T20:57:31.000000Z",
+    "created_by": 1,
+    "updated_by": 1
+  },
+  "tags": [
+    {
+      "name": "Category",
+      "value": "Kinda Good Content",
+      "order": 0,
+      "created_at": "2020-05-22T23:07:20.000000Z",
+      "updated_at": "2020-05-22T23:07:20.000000Z"
+    },
+    {
+      "name": "Rating",
+      "value": "Medium",
+      "order": 0,
+      "created_at": "2020-05-22T23:07:20.000000Z",
+      "updated_at": "2020-05-22T23:07:20.000000Z"
+    }
+  ]
+}
